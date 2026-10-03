@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f8d7ff, #d7e7ff);
+            min-height: 100vh;
+        }
+
+        header {
+            background:pink;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        header h2 {
+            color: #8e44ad;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8e44ad;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #6c3483;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(blue,white, brown);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.08);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Website Saya</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tentang</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Halo, Selamat Datang! 👋</h1>
+
+        <p>
+            Ini adalah website pertama saya.
+        </p>
+
+        <a href="#" class="button">Mulai</a>
+    </section>
+
+    <footer>
+        © 2026 Website Saya
+    </footer>
+
+</body>
+</html>
