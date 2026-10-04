@@ -1,113 +1,189 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Saya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <title>Qianzy-Zukhrufa</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f8d7ff, #d7e7ff);
-            min-height: 100vh;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        header {
-            background:pink;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f8d7ff, #d7e7ff, #fff1f8);
+      color: #333;
+    }
 
-        header h2 {
-            color: #8e44ad;
-        }
+    nav {
+      width: 100%;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 25px;
-            font-weight: bold;
-        }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #8b4bbd;
+    }
 
-        nav a:hover {
-            color: #8e44ad;
-        }
+    nav a {
+      text-decoration: none;
+      color: #555;
+      margin-left: 20px;
+      font-weight: bold;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 120px 20px;
-        }
+    nav a:hover {
+      color: #e84393;
+    }
 
-        .hero h1 {
-            font-size: 50px;
-            color: #6c3483;
-            margin-bottom: 20px;
-        }
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-        .hero p {
-            font-size: 20px;
-            color: #444;
-            margin-bottom: 30px;
-        }
+    .hero-content {
+      max-width: 750px;
+    }
 
-        .button {
-            display: inline-block;
-            background: linear-gradient(blue,white, brown);
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #8e44ad, #e84393);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        .button:hover {
-            transform: scale(1.08);
-        }
+    .hero p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 30px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: white;
-            color: #555;
-        }
-    </style>
+    .button {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #9b59b6, #e84393);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(155, 89, 182, 0.3);
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-4px);
+    }
+
+    .about {
+      padding: 80px 10%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .about h2 {
+      font-size: 36px;
+      color: #8e44ad;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.7);
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      nav {
+        padding: 15px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h2>Website Saya</h2>
+  <nav>
+    <div class="logo">Qianzy-Zukhrufa ✨</div>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Tentang</a>
-            <a href="#">Kontak</a>
-        </nav>
-    </header>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <h1>Halo, Selamat Datang! 👋</h1>
+  <section class="hero" id="home">
+    <div class="hero-content">
 
-        <p>
-            Ini adalah website pertama saya.
-        </p>
+      <h1>Welcome to My Website ✨</h1>
 
-        <a href="#" class="button">Mulai</a>
-    </section>
+      <p>
+        Halo! Selamat datang di website Qianzy-Zukhrufa.
+        Ini adalah website pertamaku yang dibuat dengan HTML dan CSS.
+      </p>
 
-    <footer>
-        © 2026 Website Saya
-    </footer>
+      <a href="#about" class="button">
+        Jelajahi Website
+      </a>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <h2>Tentang Website 💜</h2>
+
+    <p>
+      Website ini adalah tempat untuk belajar, berkreasi,
+      dan membuat berbagai hal menarik menggunakan teknologi web.
+      Semoga website ini terus berkembang menjadi semakin keren!
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 Qianzy-Zukhrufa • Dibuat dengan 💜
+  </footer>
 
 </body>
 </html>
